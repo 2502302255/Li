@@ -51,7 +51,7 @@ def infoq_recommend():
     from rsshub.spiders.infoq.recommend import ctx
     return render_template('main/atom.xml', **filter_content(ctx()))
 
-@bp.route('/pojie/pojie')
+@bp.route('/52pojie/52pojie')
 def pojie_pojie():
     from rsshub.spiders.pojie.pojie import ctx
     return render_template('main/atom.xml', **filter_content(ctx()))
